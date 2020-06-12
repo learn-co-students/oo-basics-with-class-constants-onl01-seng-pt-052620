@@ -11,13 +11,9 @@ class Shoe
   end
 
   def unique_brand(brand)
-    BRANDS.each do |name| 
-      if name != brand
-        BRANDS << brand
-    end
+      BRANDS << brand
+      BRANDS.uniq!
   end
-  end
-
 
   def cobble
     self.condition = "new"
