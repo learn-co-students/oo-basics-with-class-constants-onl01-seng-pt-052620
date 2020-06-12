@@ -7,8 +7,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    if BRANDS.include "Nike"
-    puts BRANDS.size = 3
+    if BRANDS.include? "Nike"
+    exclude? "Nike"
   end
 
   def cobble
